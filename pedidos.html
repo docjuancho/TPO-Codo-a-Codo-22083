@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon/favicon.ico" type= "image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"><link rel="stylesheet" href="./estilos/estilos copy.css">
+    <script src="https://kit.fontawesome.com/bffa1a8034.js" crossorigin="anonymous"></script>
+    <script src="./ruda.js"></script>
+    <link rel="stylesheet" href="./estilos/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Saira+Stencil+One&display=swap" rel="stylesheet">
+    <title>RUDA: PEDIDOS</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="main-head">      
+        </header>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="./acercade.html">HISTORIA</a></li>
+                <li><a href="./productos.html">CERVEZAS</a></li>
+                <li><a href="./clientes.html">BARES</a></li>
+                <li><a href="./index.html">HOME</a></li>
+            </ul>
+        </nav>
+
+        </div>
+        <article class="content">
+            <h1>CERVEZA RUDA</h1>
+            <p id="textoBienvenida"> DEJANOS TU PEDIDO Y UNO DE NOSOTROS SE VA A ESTAR COMUNICANDO CON VOS PARA COORDINAR EL PAGO Y LA ENTREGA DEL MISMO</p>
+            <form name="fvalida">
+                <table>
+                    <tr>
+                        <td title="Ingrese su nombre completo">Nombre: </td>
+                        <td><input type="text" name="nombre" size="30" maxlength="100"></td>
+                    </tr>
+                    <tr>
+                        <td title="Ingrese su edad. Solo apto para mayores de 18 años">Edad: </td>
+                        <td><input type="text" name="edad" size="3" maxlength="3"></td>
+                    </tr>
+                    <tr>
+                        <td title="Ingrese su número de celular">Celular: </td>
+                        <td><input type="text" name="celular" size="15" maxlength="15"></td>
+                    </tr>
+                    <tr>
+                        <td title="Seleccione tipo de cliente">Tipo de cliente:</td>
+                        <td>
+                            <select name="tipoCliente">
+                                <option value="Elegir">Elegir
+                                </option>
+                                <option value="Particular">Cliente particular</option>
+                                <option value="Bar">Bar/Expendio de cerveza</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr> 
+                        <td title="Ingrese su pedido">Pedido (Mínimo por estilo: 6 latas. Mínimo por pedido: 24 latas. <br> Para bares o expendios ingresá MAYORISTA):</td> 
+                        <td><input type="text" name="pedido" size="100" maxlength="115"></td>
+                    </tr> 
+                    <tr>
+                        <td colspan="2" align="center"><input type="button" value="Enviar" onclick="valida_envia()"></td>
+                    </tr>
+                </table>
+            </form>
+        </article>
+    <footer>
+      <div id="redessociales">
+        <a class="smedia facebook" href="https://www.facebook.com/rudacervezaartesanal/">Uno</a>
+        <a class="smedia twitter" href="https://www.twitter.com">Dos</a>
+        <a class="smedia instagram" href="https://www.instagram.com/rudacerveza/">Tres</a>
+      </div>
+      <p id="textoFooter">Derechos reservados. CABA, Argentina @2020</p>
+    </footer>   
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
